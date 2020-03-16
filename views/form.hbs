@@ -1,0 +1,48 @@
+<html>
+    <head><title>FORM</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+    function validate()
+    {
+        var enroll=document.getElementById("enroll");
+        var name=document.getElementById("name");
+        var cont=document.getElementById("cont");
+        var email=document.getElementById("email");
+        var dob=document.getElementById("dob");
+        var place=document.getElementById("place");
+        var comp=document.getElementById("comp");
+        var course=document.getElementById("course");
+        if(enroll.value.trim()=="" || name.value.trim()=="" || cont.value.trim()==""
+        || email.value.trim()=="" || dob.value.trim()=="" || place.value.trim()=="" || comp.value.trim()==""
+         || course.value.trim()==""){
+            alert("Cannot be blank field");
+            return false;
+        }else{
+            alert("Form successfully Submited");
+            true;
+        }
+    }
+        
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>University Alumni Form</h1>
+        </div>
+        <form onsubmit="return validate()" method="POST" action="/form">
+           <ol type="1">
+               <p><span class="required">*</span>Required</p>
+               <li><label for="enroll">Enrollment No</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="enroll" id="enroll"></li><br><br>
+               <li><label for="name">Name</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="name" id="name"></li><br><br>
+               <li><label for="cont">Contact No.</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="cont" id="cont"></li><br><br>
+               <li><label for="email">Email Id.</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="email" id="email"></li><br><br>
+               <li><label for="dob">Date Of birth</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="dob" id="dob"></li><br><br>
+               <li><label for="place">Placement Status</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="place" id="place"></li><br><br>
+               <li><label for="comp">Placement Company</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="comp" id="comp"></li><br><br>
+               <li><label for="course">Course</label><span class="required">*</span><br><input type="text" placeholder="Enter your answer" name="course" id="course"></li><br><br>
+           </ol>
+           <button type="submit" class="bt">Submit</button>
+        </form>
+        <p class="m">Never give out your password via form</p>
+    </body>
+</html>

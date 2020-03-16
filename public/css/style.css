@@ -1,0 +1,58 @@
+body{
+    background: #C8C8E7;
+    align-content: center;
+}
+div{
+    background: #036F48;
+    font-family: tahoma;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    
+
+}
+h1{
+    font-family: Arial;
+    font-size: 20px;
+    align-content: center;
+    color: white;
+    
+}
+input{
+    width: 90%;
+    padding: 5px;
+    
+    border: 10;
+    
+    font-size: 20px;
+    color: #040000;
+}
+label{
+    font-family: Verdana;
+    font-size: 20px;
+    
+}
+button{
+    background: #036F48;
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+   
+}
+form{
+    position: relative;
+    width: 95%;
+    background: #C8C8E7;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.required{
+    color: red;
+}
+.m{
+    font-family: sans-serif;
+    color: red;
+}
